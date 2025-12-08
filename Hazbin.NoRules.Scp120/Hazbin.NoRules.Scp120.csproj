@@ -20,6 +20,9 @@
       <Reference Include="Assembly-CSharp-firstpass">
         <HintPath>..\..\..\sl_libs\Assembly-CSharp-firstpass.dll</HintPath>
       </Reference>
+      <Reference Include="CommandSystem.Core">
+        <HintPath>..\..\..\sl_libs\CommandSystem.Core.dll</HintPath>
+      </Reference>
       <Reference Include="Exiled.API">
         <HintPath>..\..\..\sl_libs\Exiled.API.dll</HintPath>
       </Reference>
@@ -28,6 +31,9 @@
       </Reference>
       <Reference Include="LabApi">
         <HintPath>..\..\..\sl_libs\LabApi.dll</HintPath>
+      </Reference>
+      <Reference Include="Mirror">
+        <HintPath>..\..\..\sl_libs\Mirror.dll</HintPath>
       </Reference>
       <Reference Include="ProjectMER">
         <HintPath>..\..\..\sl_libs\ProjectMER.dll</HintPath>

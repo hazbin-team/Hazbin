@@ -41,6 +41,9 @@
       <Reference Include="Mirror">
         <HintPath>..\..\..\sl_libs\Mirror.dll</HintPath>
       </Reference>
+      <Reference Include="Pooling">
+        <HintPath>..\..\..\sl_libs\Pooling.dll</HintPath>
+      </Reference>
       <Reference Include="UnityEngine.CoreModule">
         <HintPath>..\..\..\sl_libs\UnityEngine.CoreModule.dll</HintPath>
       </Reference>

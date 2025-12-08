@@ -20,6 +20,9 @@
       <Reference Include="Assembly-CSharp-firstpass">
         <HintPath>..\..\..\sl_libs\Assembly-CSharp-firstpass.dll</HintPath>
       </Reference>
+      <Reference Include="CommandSystem.Core">
+        <HintPath>..\..\..\sl_libs\CommandSystem.Core.dll</HintPath>
+      </Reference>
       <Reference Include="Exiled.API">
         <HintPath>..\..\..\sl_libs\Exiled.API.dll</HintPath>
       </Reference>

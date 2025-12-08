@@ -26,6 +26,9 @@
       <Reference Include="AudioPlayerApi">
         <HintPath>..\..\..\sl_libs\AudioPlayerApi.dll</HintPath>
       </Reference>
+      <Reference Include="CommandSystem.Core">
+        <HintPath>..\..\..\sl_libs\CommandSystem.Core.dll</HintPath>
+      </Reference>
       <Reference Include="Exiled.API">
         <HintPath>..\..\..\sl_libs\Exiled.API.dll</HintPath>
       </Reference>
@@ -43,6 +46,9 @@
       </Reference>
       <Reference Include="UnityEngine.CoreModule">
         <HintPath>..\..\..\sl_libs\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.PhysicsModule">
+        <HintPath>..\..\..\sl_libs\UnityEngine.PhysicsModule.dll</HintPath>
       </Reference>
     </ItemGroup>
 
