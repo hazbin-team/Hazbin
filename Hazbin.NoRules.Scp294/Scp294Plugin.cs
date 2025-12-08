@@ -7,7 +7,7 @@ using LabApi.Loader.Features.Plugins;
 namespace Hazbin.NoRules.Scp294;
 
 public class Scp294Plugin : Plugin<Config> {
-    public override string Name => "ShowReports";
+    public override string Name => "Scp294";
     public override string Description => "Notify admins about reports, made specially for Hazbin";
     public override string Author => "wexels.dev";
     public override Version Version => new(1, 0, 0);

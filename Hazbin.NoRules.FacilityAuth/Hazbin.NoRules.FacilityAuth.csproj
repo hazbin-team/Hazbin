@@ -13,6 +13,10 @@
         <FileVersion>1.0.0.0</FileVersion>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+      <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
     <ItemGroup>
       <ProjectReference Include="..\Hazbin.Core\Hazbin.Core.csproj" />
     </ItemGroup>

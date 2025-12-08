@@ -2,6 +2,7 @@
 using LabApi.Events.CustomHandlers;
 using LabApi.Features;
 using LabApi.Loader.Features.Plugins;
+using MEC;
 
 namespace Hazbin.NoRules.Hitmarkers;
 
@@ -15,18 +16,18 @@ public class HitPlugin : Plugin {
     private EventHandlers? _handlers;
     
     public override void Enable() {
-        _handlers = new EventHandlers();
+        this._handlers = new EventHandlers();
         
         CustomHandlersManager.RegisterEventsHandler(this._handlers);
-        
-        Player.Hurting += _handlers.OnPlayerHurting;
+
+        Timing.CallDelayed(2.5f, () => Player.Hurting += this._handlers.OnPlayerHurting);
     }
     
     public override void Disable() {
-        Player.Hurting += _handlers!.OnPlayerHurting;
+        Player.Hurting += this._handlers!.OnPlayerHurting;
         
         CustomHandlersManager.UnregisterEventsHandler(this._handlers);
-        
-        _handlers = null;
+
+        this._handlers = null;
     }
 }

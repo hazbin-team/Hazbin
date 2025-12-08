@@ -1,6 +1,6 @@
 <Project>
   <PropertyGroup>
-    <OutputPath>$(MSBuildThisFileDirectory)build\bin\</OutputPath>
+    <OutputPath>$(MSBuildThisFileDirectory)build\</OutputPath>
 
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>

@@ -13,6 +13,10 @@
         <FileVersion>0.0.0.0</FileVersion>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+      <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
     <ItemGroup>
       <Reference Include="Assembly-CSharp">
         <HintPath>..\..\..\sl_libs\Assembly-CSharp.dll</HintPath>
