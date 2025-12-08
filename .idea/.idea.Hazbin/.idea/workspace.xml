@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eeffe2d7-69f1-47ce-a27b-f2596ec2ebb1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Hazbin/.idea/cat-activity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Hazbin/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Hazbin/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Hazbin/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Hazbin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Hazbin/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Attributes/HarmonyPatchCategory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/CorePlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Enums/CustomInfoColor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Enums/DamageSubType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Enums/DamageType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Enums/DamageUniversalType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Enums/DoorPermissionCheck.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Enums/EffectType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Enums/ListOperation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Enums/Mask.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Enums/RemoteAdmin/DataType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Enums/RemoteAdmin/PrefixType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/AdminToyFakeExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/CollectionExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/CustomInfoExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/DamageExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/DictionaryExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/DummyExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/FakeRpcExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/FakeSyncCoreExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/FakeSyncListExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/FakeSyncVarExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/HarmonyExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/HintExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/ItemTypeExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/MirrorWriterExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/NetworkExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/PlayerExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/RandomExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/ReflectionExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/RoleTypeIdExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Extensions/StringExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Features/DataStorage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Features/FlagsHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Features/GlobalCooldown.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Features/GradientHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Features/HtmlHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Features/PermittedCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Features/PlayerCooldown.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Features/PrefabManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Features/PrefabStore.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Features/RegexHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Features/SnowflakesHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/GlobalUsings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Hazbin.Core.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Patches/HelpCommandPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Patches/HintPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Patches/KeyCommandPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Patches/PmSetGroupCommandPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Patches/ReloadConfigCommandPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Patches/SetGroupCommandPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Patches/ShutdownPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Core/Patches/SudoCommandPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.AutoBroadcast/Broadcast.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.AutoBroadcast/BroadcastPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.AutoBroadcast/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.AutoBroadcast/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.AutoBroadcast/Hazbin.NoRules.AutoBroadcast.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterCoins/CoinPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterCoins/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterCoins/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterCoins/Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterCoins/Hazbin.NoRules.BetterCoins.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterEscape/Components/EscapeComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterEscape/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterEscape/EscapePlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterEscape/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterEscape/Features/EscapeScenario.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterEscape/Features/EscapeScenarioManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterEscape/Features/EscapeSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.BetterEscape/Hazbin.NoRules.BetterEscape.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.DotResKill/Commands/Kill.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.DotResKill/Commands/KillToggle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.DotResKill/Commands/Res.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.DotResKill/Commands/ResToggle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.DotResKill/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.DotResKill/DotPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.DotResKill/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.DotResKill/Hazbin.NoRules.DotResKill.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.FacilityAuth/AuthPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.FacilityAuth/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.FacilityAuth/Hazbin.NoRules.FacilityAuth.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.FriendlyFire/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.FriendlyFire/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.FriendlyFire/FfPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.FriendlyFire/Hazbin.NoRules.FriendlyFire.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Hitmarkers/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Hitmarkers/Hazbin.NoRules.Hitmarkers.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Hitmarkers/HitPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Hud/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Hud/Enums/AspectRatio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Hud/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Hud/Hazbin.NoRules.Hud.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Hud/HudPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.InfinityStuff/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.InfinityStuff/Hazbin.NoRules.InfinityStuff.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.InfinityStuff/InfinityPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.IntercomList/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.IntercomList/Hazbin.NoRules.IntercomList.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.IntercomList/IntercomPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Lobby/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Lobby/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Lobby/Hazbin.NoRules.Lobby.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Lobby/LobbyInteractionBlocker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Lobby/LobbyPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Lobby/SoundtrackPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Old173Spawn/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Old173Spawn/Hazbin.NoRules.Old173Spawn.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.Old173Spawn/Old173Plugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PinkCandy/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PinkCandy/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PinkCandy/Hazbin.NoRules.PinkCandy.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PinkCandy/PinkPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PlayerXp/Commands/CheckXP.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PlayerXp/Commands/GiveXP.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PlayerXp/Commands/SetXP.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PlayerXp/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PlayerXp/Extensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PlayerXp/Hazbin.NoRules.PlayerXp.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PlayerXp/Models/Database.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PlayerXp/Models/Level.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PlayerXp/Models/PlayerXp.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.PlayerXp/XpPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ProximityChat/ChatPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ProximityChat/Config.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ProximityChat/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ProximityChat/Hazbin.NoRules.ProximityChat.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.RandomScale/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.RandomScale/Hazbin.NoRules.RandomScale.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.RandomScale/ScalePlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.RemoteKeycard/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.RemoteKeycard/Hazbin.NoRules.RemoteKeycard.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.RemoteKeycard/KeycardPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ScpSwap/Commands/Swap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ScpSwap/Commands/SwapToggle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ScpSwap/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ScpSwap/Hazbin.NoRules.ScpSwap.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ScpSwap/SwapPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ShowReports/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ShowReports/Hazbin.NoRules.ShowReports.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.NoRules.ShowReports/ReportPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Teleports/EventHandlers.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Teleports/Extensions/TeleportsExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Teleports/Hazbin.Teleports.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.Teleports/TeleportPlugin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hazbin.sln" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/befed090bad3415ca7bb39be53a48b1d3d6800/2f/8a0c441a/IntercomPlayback.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/befed090bad3415ca7bb39be53a48b1d3d6800/3b/5b32d8be/Intercom.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/befed090bad3415ca7bb39be53a48b1d3d6800/51/c14b2c49/IntercomDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/befed090bad3415ca7bb39be53a48b1d3d6800/65/edce6747/IntercomTextCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/befed090bad3415ca7bb39be53a48b1d3d6800/91/9cb2b683/IntercomTimeoutCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/befed090bad3415ca7bb39be53a48b1d3d6800/d7/afacecb5/IntercomMuteCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/befed090bad3415ca7bb39be53a48b1d3d6800/de/b2ed9e21/IntercomUnmuteCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f859671c5d7748199d8c7b10a14f81563d2c00/8f/1ff72f4d/HintDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.Core/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.Core/CorePlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.AutoBroadcast/BroadcastPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.AutoBroadcast/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.BetterCoins/CoinPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.BetterCoins/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.BetterEscape/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.BetterEscape/EscapePlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.BetterEscape/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.DotResKill/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.DotResKill/DotPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.FriendlyFire/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.FriendlyFire/FfPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.Hud/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.Hud/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.Hud/HudPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.InfinityStuff/EventHandlers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.InfinityStuff/InfinityPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.IntercomList/IntercomPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.Lobby/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.Lobby/LobbyPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.Old173Spawn/Old173Plugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.PinkCandy/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.PinkCandy/PinkPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.PlayerXp/XpPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.ProximityChat/ChatPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.ProximityChat/Config.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.RandomScale/ScalePlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.RemoteKeycard/KeycardPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.Scp1162/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.Scp294/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.Scp914Rework/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.ScpSwap/SwapPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.NoRules.ShowReports/ReportPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Hazbin.Teleports/TeleportPlugin.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="36WiOfkn3fGrXupY0hgQIELuKil" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/run/media/wexelsdev/DEV/sl_libs/UnityEngine.PhysicsModule.dll",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="useMixedMode" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eeffe2d7-69f1-47ce-a27b-f2596ec2ebb1" name="Changes" comment="" />
+      <created>1765128698813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765128698813</updated>
+      <workItem from="1765128702140" duration="44122000" />
+      <workItem from="1765223559073" duration="649000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

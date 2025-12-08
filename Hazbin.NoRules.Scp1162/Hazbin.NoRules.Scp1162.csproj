@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TargetFramework>net48</TargetFramework>
+        <Authors>wexels.dev</Authors>
+        <Copyright>Copyright (с) Bykov Ivan Dmitrievich 2025</Copyright>
+        <Configurations>Release;Debug</Configurations>
+        <Platforms>x64</Platforms>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+    </PropertyGroup>
+
+</Project>

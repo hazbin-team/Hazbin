@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TargetFramework>net48</TargetFramework>
+        <Authors>wexels.dev</Authors>
+        <Copyright>Copyright (с) Bykov Ivan Dmitrievich 2025</Copyright>
+        <Configurations>Release;Debug</Configurations>
+        <Platforms>x64</Platforms>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <FileVersion>1.0.0.0</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Assembly-CSharp">
+        <HintPath>..\..\..\sl_libs\Assembly-CSharp.dll</HintPath>
+      </Reference>
+      <Reference Include="Assembly-CSharp-firstpass">
+        <HintPath>..\..\..\sl_libs\Assembly-CSharp-firstpass.dll</HintPath>
+      </Reference>
+      <Reference Include="CommandSystem.Core">
+        <HintPath>..\..\..\sl_libs\CommandSystem.Core.dll</HintPath>
+      </Reference>
+      <Reference Include="HintServiceMeow">
+        <HintPath>..\..\..\sl_libs\HintServiceMeow-LabAPI.dll</HintPath>
+      </Reference>
+      <Reference Include="LabApi">
+        <HintPath>..\..\..\sl_libs\LabApi.dll</HintPath>
+      </Reference>
+      <Reference Include="Newtonsoft.Json">
+        <HintPath>..\..\..\sl_libs\Newtonsoft.Json.dll</HintPath>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>..\..\..\sl_libs\UnityEngine.CoreModule.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Hazbin.Core\Hazbin.Core.csproj" />
+    </ItemGroup>
+
+</Project>
