@@ -1,11 +1,12 @@
-using Exiled.API.Features;
-using Exiled.API.Features.Items;
-using Exiled.API.Features.Pickups;
 using Hazbin.Core.Enums;
 using Hazbin.Core.Extensions;
 using Hazbin.NoRules.Scp294.EventArgs;
 using LabApi.Events.Arguments.PlayerEvents;
+using LabApi.Features.Wrappers;
 using UnityEngine;
+using Logger = LabApi.Features.Console.Logger;
+using Hint = Exiled.API.Features.Hint;
+using Effect = Exiled.API.Features.Effect;
 
 namespace Hazbin.NoRules.Scp294.Models;
 
@@ -29,8 +30,10 @@ public abstract class Drink {
                 ev.Player.EnableEffect((EffectType)effect.Type, effect.Intensity, effect.Duration, effect.AddDurationIfActive);
             }
         }
-            
-        LabApi.Features.Wrappers.Player.Get(ev.Player.UserId)!.ShowCoreHint(this.Hint);
+
+        if (this.Hint.Show) {
+            ev.Player.ShowCoreHint(this.Hint.Content, this.Hint.Duration);
+        }
 
         if (!string.IsNullOrEmpty(this.AudioClip)) {
             AudioPlayer drinkPlayer = AudioPlayer.CreateOrGet($"{ev.Player.Nickname}_{ev.Drink.Name}",
@@ -44,7 +47,7 @@ public abstract class Drink {
                 });
 
             drinkPlayer.AddClip(this.AudioClip);
-            Log.Debug($"{ev.Drink.Name}: AudioClip {this.AudioClip} has been played");
+            Logger.Debug($"{ev.Drink.Name}: AudioClip {this.AudioClip} has been played");
         }
 
         this.OnDrinked(ev);
@@ -64,20 +67,17 @@ public abstract class Drink {
     public virtual bool Check(Pickup? pickup) => pickup != null && this.TrackedSerials.Contains(pickup.Serial);
     public virtual bool Check(Item? item) => item != null && this.TrackedSerials.Contains(item.Serial);
     
-    public virtual bool Check(LabApi.Features.Wrappers.Pickup? pickup) => pickup != null && this.TrackedSerials.Contains(pickup.Serial);
-    public virtual bool Check(LabApi.Features.Wrappers.Item? item) => item != null && this.TrackedSerials.Contains(item.Serial);
-    
     public virtual void Give(Player player) {
         try {
-            Item item = player.AddItem(ItemType.AntiSCP207);
+            Item? item = player.AddItem(ItemType.AntiSCP207);
 
-            Log.Debug($"{nameof(this.Give)}: Adding {item.Serial} to tracker.");
+            Logger.Debug($"{nameof(this.Give)}: Adding {item.Serial} to tracker.");
             this.TrackedSerials.Add(item.Serial);
 
             player.CurrentItem = item;
         }
         catch (Exception e) {
-            Log.Error($"{nameof(this.Give)}: {e}");
+            Logger.Error($"{nameof(this.Give)}: {e}");
         }
     }
 

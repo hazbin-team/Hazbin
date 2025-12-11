@@ -7,7 +7,7 @@ public class TeleportPlugin : Plugin {
     public override string Name => "Hazbin.Teleports";
     public override string Description => "Easy to use api for teleportation";
     public override string Author => "wexels.dev && NotAloneAgain";
-    public override Version Version => new(6, 0, 0);
+    public override Version Version => new(6, 0, 1);
     public override Version RequiredApiVersion => LabApi.Features.LabApiProperties.CurrentVersion;
 
     private EventHandlers? _handlers;

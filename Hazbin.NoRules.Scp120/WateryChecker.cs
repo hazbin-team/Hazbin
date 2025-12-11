@@ -12,7 +12,7 @@ public class WateryChecker : MonoBehaviour {
         Player? player = Player.Get(other.gameObject);
         if (player == null) return;
 
-        Timing.CallDelayed(1.75f, () => Exiled.API.Features.Player.Get(player).TeleportToRandomRoom());
+        Timing.CallDelayed(1.75f, () => player.TeleportToRandomRoom());
 
         player.EnableEffect<Flashed>(1, 2f);
         player.ShowCoreHint("<b>Вы таинственным образом переместились в случайную комнату!</b>");

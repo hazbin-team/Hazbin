@@ -34,13 +34,6 @@ public static class HintExtensions
         player.ShowHint(message, new Vector2(0.0f, 680.0f), duration, HintVerticalAlign.Middle, tag: "center");
     }
         
-    public static void ShowCoreHint(this Player player, Exiled.API.Features.Hint hint)
-    {
-        if (!hint.Show) return;
-            
-        ShowCoreHint(player, hint.Content, hint.Duration);
-    }
-        
     public static void ShowCoreHint(this Player? player, Hints.Hint hint)
     {
         if (!(hint is TextHint textHint)) return;

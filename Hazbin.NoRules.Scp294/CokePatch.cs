@@ -1,7 +1,7 @@
-using Exiled.API.Features;
 using HarmonyLib;
 using Hazbin.NoRules.Scp294.Models;
 using InventorySystem.Items.Usables;
+using LabApi.Features.Wrappers;
 
 namespace Hazbin.NoRules.Scp294;
 

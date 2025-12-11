@@ -46,13 +46,13 @@ public class EventHandlers : CustomEventsHandler {
 
     public static readonly Dictionary<AspectRatio, float> AspectRatioToScpPos = new()
     {
-        {AspectRatio.SixteenToNine, 860.0f},
-        {AspectRatio.FourToThree, 843.0f},
-        {AspectRatio.SixteenToTen, 973.0f}
+        {AspectRatio.SixteenToNine, 856.0f},
+        {AspectRatio.FourToThree, 839.0f},
+        {AspectRatio.SixteenToTen, 959.0f}
     };
 
-    public override void OnPlayerChangingRole(PlayerChangingRoleEventArgs ev) {
-        if (RoleExtensions.GetTeam(ev.NewRole) == Team.SCPs)
+    public override void OnPlayerChangedRole(PlayerChangedRoleEventArgs ev) {
+        if (RoleExtensions.GetTeam(ev.NewRole.RoleTypeId) == Team.SCPs)
         {
             SetScpStatus(ev.Player, 0); // ставлю статус на чат дцп когда человека респавнит чтобы да
             return; // усё, досвидания
@@ -71,9 +71,10 @@ public class EventHandlers : CustomEventsHandler {
         string header = $"<b>{project} <size=20>{serverName}</size></b>";
 
         string groupInfo = "";
-        if (ev.Player.ReferenceHub.serverRoles != null)
+        string group = ev.Player.ReferenceHub.serverRoles.GetColoredRoleString();
+        if (!string.IsNullOrEmpty(group))
         {
-            groupInfo = $"\n<color=#C93E3E>Права</color>: {ev.Player.ReferenceHub.serverRoles.GetColoredRoleString()}";
+            groupInfo = $"\n<color=#C93E3E>Права</color>: {group}";
         }
 
         string role = ev.Player.IsAlive
@@ -275,9 +276,9 @@ public class EventHandlers : CustomEventsHandler {
                     Player player = LocalHints.First(x => x.Value.Contains(hint)).Key;
 
                     string groupInfo = "";
-                    if (player.ReferenceHub.serverRoles != null)
-                    {
-                        groupInfo = $"\n<color=#C93E3E>Права</color>: {player.ReferenceHub.serverRoles.GetColoredRoleString()}";
+                    string group = player.ReferenceHub.serverRoles.GetColoredRoleString();
+                    if (!string.IsNullOrEmpty(group)) {
+                        groupInfo = $"\n<color=#C93E3E>Права</color>: {group}";
                     }
 
                     string role = player.IsAlive

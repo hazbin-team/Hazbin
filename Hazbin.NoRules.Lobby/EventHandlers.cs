@@ -22,32 +22,43 @@ internal class EventHandlers(string soundsPath) : CustomEventsHandler {
 
     public override void OnServerWaitingForPlayers() {
         string path = Path.Combine(soundsPath, "lobby");
-        string[] music = Directory.GetFiles(path, "*.ogg");
-        AudioClipStorage.LoadClip(Path.Combine(path, music.RandomItem()), "lobby_music");
-        
-        Timing.CallDelayed(1, () => {
+        string[] files = Directory.GetFiles(path, "*.ogg");
+
+        if (files.Length == 0)
+            return;
+
+        List<string> clips = [];
+        foreach (string file in files) {
+            string name = Path.GetFileNameWithoutExtension(file);
+            AudioClipStorage.LoadClip(file, name);
+            clips.Add(name);
+        }
+
+        Timing.CallDelayed(1f, () => {
             ObjectSpawner.SpawnSchematic("hazbin", new (0, -50, 0));
-        
-            this.lobbyPlayer = AudioPlayer.CreateOrGet("Lobby",
-                onIntialCreation: p =>
-                {
-                    Speaker speaker = p.AddSpeaker("Main", isSpatial: false, maxDistance: 1000.0f);
-                    
-                    speaker.Position = new Vector3(0.0f, -50.0f, 0.0f) + Vector3.up;
+
+            AudioPlayer? player = AudioPlayer.CreateOrGet("Lobby",
+                onIntialCreation: p => {
+                    Speaker? speaker = p.AddSpeaker("Main", isSpatial: false, maxDistance: 1000f);
+                    speaker.Position = new Vector3(0, -50, 0) + Vector3.up;
                 });
 
-            this.lobbyPlayer.AddClip("lobby_music", 5.0f);
+            clips = clips.OrderBy(_ => UnityEngine.Random.value).ToList();
+
+            foreach (string? c in clips)
+                player.AddClip(c, 5f);
         });
     }
 
     public override void OnServerRoundStarted() {
-        foreach (Player player in Player.List.Where(x => x.Role != RoleTypeId.Overwatch)) {
+        foreach (Player player in Player.List.Where(x => !x.IsHost && x.Role != RoleTypeId.Overwatch)) {
             player.ReferenceHub.interCoordinator.RemoveBlocker(this._blockers[player]);
             player.DisableEffect(EffectType.MovementBoost);
             player.DisableEffect(EffectType.SilentWalk);
             player.IsGodModeEnabled = false;
             player.ClearItems();
             player.SetRole(RoleTypeId.Spectator);
+            player.ClearHints("lobby");
         }
 
         this.lobbyPlayer?.Destroy();

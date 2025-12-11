@@ -1,7 +1,6 @@
 using HarmonyLib;
 using Hazbin.Core.Extensions;
 using Hints;
-using LabApi.Features.Wrappers;
 using Mirror;
 using Hint = Hints.Hint;
 

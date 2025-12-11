@@ -15,8 +15,7 @@ public static class Extensions
     {
         exp /= 3;
         
-        if (player.Nickname.Contains("#VORTEX"))
-        {
+        if (player.Nickname.ToUpper().Contains("#HAZBIN")) {
             exp *= 2;
         }
 

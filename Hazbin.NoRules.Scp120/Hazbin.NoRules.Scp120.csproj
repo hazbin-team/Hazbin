@@ -27,12 +27,6 @@
       <Reference Include="CommandSystem.Core">
         <HintPath>..\..\..\sl_libs\CommandSystem.Core.dll</HintPath>
       </Reference>
-      <Reference Include="Exiled.API">
-        <HintPath>..\..\..\sl_libs\Exiled.API.dll</HintPath>
-      </Reference>
-      <Reference Include="HintServiceMeow">
-        <HintPath>..\..\..\sl_libs\HintServiceMeow-LabAPI.dll</HintPath>
-      </Reference>
       <Reference Include="LabApi">
         <HintPath>..\..\..\sl_libs\LabApi.dll</HintPath>
       </Reference>

@@ -1,13 +1,12 @@
 using AdminToys;
-using Exiled.API.Enums;
+using Hazbin.Core.Enums;
 using Hazbin.Core.Extensions;
 using LabApi.Events.CustomHandlers;
 using LabApi.Features.Wrappers;
+using MapGeneration;
 using MEC;
 using UnityEngine;
 using PrimitiveObjectToy = LabApi.Features.Wrappers.PrimitiveObjectToy;
-using Room = Exiled.API.Features.Room;
-using Player = Exiled.API.Features.Player;
 using Random = UnityEngine.Random;
 
 namespace Hazbin.NoRules.Scp1162;
@@ -15,7 +14,7 @@ namespace Hazbin.NoRules.Scp1162;
 internal class EventHandlers(List<ItemType> allowedItems) : CustomEventsHandler {
     public override void OnServerRoundStarted() {
         Timing.CallDelayed(2.5f, () => {
-            Room room = Room.Get(RoomType.Lcz173);
+            Room room = Room.Get(RoomName.Lcz173).First();
 
             PrimitiveObjectToy parentToy = PrimitiveObjectToy.Create();
             parentToy.Type = PrimitiveType.Cylinder;
@@ -33,39 +32,37 @@ internal class EventHandlers(List<ItemType> allowedItems) : CustomEventsHandler 
         });
     }
 
-    private void OnInteracted(LabApi.Features.Wrappers.Player ply) {
-        Player player = Player.Get(ply.UserId);
-        
+    private void OnInteracted(Player ply) {
         //if (player.IsSubject() && player.IsScp) return;
             
-        if ((player?.CurrentItem?.Type ?? ItemType.None) == ItemType.None) {
-            player!.EnableEffect(EffectType.Flashed, 1, 1);
-            player.EnableEffect(EffectType.SeveredHands);
-            player.EnableEffect(EffectType.Traumatized);
+        if ((ply?.CurrentItem?.Type ?? ItemType.None) == ItemType.None) {
+            ply!.EnableEffect(EffectType.Flashed, 1, 1);
+            ply.EnableEffect(EffectType.SeveredHands);
+            ply.EnableEffect(EffectType.Traumatized);
 
-            player.Health -= 30;
+            ply.Health -= 30;
 
             ply.ShowCoreHint("<b>Вы протянули <color=red>пустую</color> руку но <color=red>не смогли её вытянуть</color></b>");
         }
         else {
             if (Random.Range(0, 100) < 5) {
-                player!.EnableEffect(EffectType.Flashed, 1, 1);
-                player.EnableEffect(EffectType.SeveredHands);
-                player.EnableEffect(EffectType.Traumatized);
+                ply!.EnableEffect(EffectType.Flashed, 1, 1);
+                ply.EnableEffect(EffectType.SeveredHands);
+                ply.EnableEffect(EffectType.Traumatized);
 
-                player.Health -= 30;
+                ply.Health -= 30;
 
                 ply.ShowCoreHint("<b>Вы протянули руку но <color=red>не смогли её вытянуть</color></b>");
                 return;
             }
             
-            player!.RemoveHeldItem();
+            ply!.RemoveItem(ply.CurrentItem!);
 
             ItemType randomItem = allowedItems.RandomItem();
             
             ply.ShowCoreHint($"<b>Вы протянули руку и вытянули {randomItem.TranslateItemType(true)}</b>");
 
-            player.CurrentItem = player.AddItem(randomItem);
+            ply.CurrentItem = ply.AddItem(randomItem);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Hazbin.NoRules.PlayerXp.Models;
 using LabApi.Events.CustomHandlers;
 using LabApi.Features;
+using LabApi.Features.Wrappers;
 using LabApi.Loader.Features.Paths;
 using LabApi.Loader.Features.Plugins;
 
@@ -20,7 +21,7 @@ public class XpPlugin : Plugin {
     public override void Enable() {
         Instance = this;
         this._handlers = new();
-        this._database = new(Path.Combine(PathManager.Configs.FullName, this.Name));
+        this._database = new(Path.Combine(PathManager.Configs.FullName, Server.Port.ToString(), this.Name));
         
         CustomHandlersManager.RegisterEventsHandler(this._handlers);
     }

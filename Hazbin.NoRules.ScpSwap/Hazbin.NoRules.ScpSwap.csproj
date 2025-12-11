@@ -24,6 +24,9 @@
       <Reference Include="CommandSystem.Core">
         <HintPath>..\..\..\sl_libs\CommandSystem.Core.dll</HintPath>
       </Reference>
+      <Reference Include="HintServiceMeow">
+        <HintPath>..\..\..\sl_libs\HintServiceMeow-LabAPI.dll</HintPath>
+      </Reference>
       <Reference Include="LabApi">
         <HintPath>..\..\..\sl_libs\LabApi.dll</HintPath>
       </Reference>
@@ -33,6 +36,10 @@
       <Reference Include="UnityEngine.CoreModule">
         <HintPath>..\..\..\sl_libs\UnityEngine.CoreModule.dll</HintPath>
       </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Hazbin.Core\Hazbin.Core.csproj" />
     </ItemGroup>
 
 </Project>

@@ -11,7 +11,6 @@ namespace Hazbin.NoRules.Scp120;
 
 internal class EventHandlers : CustomEventsHandler {
     public override void OnServerRoundStarted() {
-        Logger.Debug("Round started!");
         Timing.CallDelayed(0.5f, () => {
             Room room = Room.Get(RoomName.LczGlassroom).First();
         

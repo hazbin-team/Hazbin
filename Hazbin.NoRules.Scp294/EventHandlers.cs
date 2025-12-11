@@ -1,5 +1,4 @@
 using AdminToys;
-using Exiled.API.Enums;
 using Hazbin.Core.Extensions;
 using Hazbin.Core.Features;
 using Hazbin.NoRules.Scp294.EventArgs;
@@ -7,18 +6,18 @@ using Hazbin.NoRules.Scp294.Models;
 using LabApi.Events.Arguments.PlayerEvents;
 using LabApi.Events.CustomHandlers;
 using LabApi.Features.Wrappers;
+using MapGeneration;
 using ProjectMER.Features;
 using ProjectMER.Features.Objects;
 using UnityEngine;
 using PrimitiveObjectToy = LabApi.Features.Wrappers.PrimitiveObjectToy;
-using Room = Exiled.API.Features.Room;
 
 namespace Hazbin.NoRules.Scp294;
 
 internal class EventHandlers(DrinkMachine dM) : CustomEventsHandler {
     // server
     public override void OnServerRoundStarted() {
-        Room room = Room.Get(RoomType.EzPcs);
+        Room room = Room.Get(RoomName.EzOfficeLarge).First();
         
         SchematicObject schematic = ObjectSpawner.SpawnSchematic("294", room.Position, room.Rotation, Vector3.one);
         

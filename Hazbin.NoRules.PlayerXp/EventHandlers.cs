@@ -121,7 +121,7 @@ internal class EventHandlers : CustomEventsHandler
         if (ev.Player.IsSCP) {
             ev.Attacker?.GiveXp(200);
         }
-        else if (ev.Attacker!.IsSCP) {
+        else if (ev.Attacker is { IsSCP: true }) {
             ev.Attacker?.GiveXp(70);
         }
         else {

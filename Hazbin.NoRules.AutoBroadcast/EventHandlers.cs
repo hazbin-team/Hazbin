@@ -16,13 +16,11 @@ internal class EventHandlers(List<Broadcast> broadcasts) : CustomEventsHandler {
     private IEnumerator<float> BroadcastCoroutine(Player player) {
         while (true) {
             Broadcast broadcast = broadcasts.RandomItem();
-            Logger.Debug($"Broadcast selected, {broadcast.Message}");
 
             yield return Timing.WaitForSeconds(broadcast.Delay);
 
             player.ClearBroadcasts();
             player.SendBroadcast(broadcast.Message!, broadcast.Duration);
-            Logger.Debug($"Broadcast send to {player.DisplayName}");
         }
     }
 }

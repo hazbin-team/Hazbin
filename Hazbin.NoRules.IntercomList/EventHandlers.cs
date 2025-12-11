@@ -1,4 +1,5 @@
 using LabApi.Events.CustomHandlers;
+using LabApi.Features.Console;
 using LabApi.Features.Wrappers;
 using MEC;
 using PlayerRoles;
@@ -8,7 +9,9 @@ namespace Hazbin.NoRules.IntercomList;
 
 internal class EventHandlers : CustomEventsHandler {
     private IEnumerator<float> IntercomCoroutine() {
+        Logger.Debug("Starting Intercom Coroutine");
         while (true) {
+            Logger.Debug("Intercom Coroutine");
             string text;
             switch (Intercom.State) {
                 case IntercomState.Ready:
@@ -28,6 +31,8 @@ internal class EventHandlers : CustomEventsHandler {
                     break;
             }
 
+            Logger.Debug("Intercom Coroutine: " + text);
+
             text += "<size=250>";
             text += "<color=white>------------------------</color>\n";
             text += $"<color=orange>Класс Д:</color> <color=white>{Player.List.Count(player => player.Role == RoleTypeId.ClassD)}</color>\n";
@@ -42,12 +47,15 @@ internal class EventHandlers : CustomEventsHandler {
             text += $"<color=white>Наблюдатели: {spectatorCount}</color>\n";
             text += "<color=white>------------------------</color>\n";
             text += "</size>";
-
-            IntercomDisplay.TrySetDisplay(text);
+            
+            Logger.Debug("Intercom Coroutine: " + text);
+            if (!IntercomDisplay.TrySetDisplay(text)) {
+                Logger.Debug("Intercom text override failed. Display not found.");
+            }
 
             yield return Timing.WaitForSeconds(1f);
         }
     }
 
-    public override void OnServerRoundStarted() => Timing.RunCoroutine(this.IntercomCoroutine());
+    public override void OnServerRoundStarted() => Timing.CallDelayed(2.5f, () => Timing.RunCoroutine(this.IntercomCoroutine()));
 }

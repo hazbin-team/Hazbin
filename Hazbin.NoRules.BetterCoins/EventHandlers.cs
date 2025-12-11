@@ -2,6 +2,7 @@ using Hazbin.Core.Extensions;
 using Hazbin.Teleports.Extensions;
 using LabApi.Events.Arguments.PlayerEvents;
 using LabApi.Events.CustomHandlers;
+using LabApi.Features.Console;
 using LabApi.Features.Wrappers;
 using MEC;
 using PlayerRoles;
@@ -53,7 +54,7 @@ internal class EventHandlers : CustomEventsHandler {
         yield return Timing.WaitForSeconds(1);
 
         if (Random.Range(0, 101) < CoinPlugin.Instance!.Config?.TeleportChance) {
-            Exiled.API.Features.Player.Get(player).TeleportToRandomRoom(true);
+            player.TeleportToRandomRoom(true);
         }
         else {
             player.ShowCoreHint("<b>Не твой день</b>");

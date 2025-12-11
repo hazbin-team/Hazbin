@@ -14,7 +14,7 @@ public class EscapePlugin : Plugin<Config> {
     private EventHandlers? _handlers;
     
     public override void Enable() {
-        this._handlers = new(this.Config!);
+        this._handlers = new();
         
         CustomHandlersManager.RegisterEventsHandler(this._handlers);
     }
